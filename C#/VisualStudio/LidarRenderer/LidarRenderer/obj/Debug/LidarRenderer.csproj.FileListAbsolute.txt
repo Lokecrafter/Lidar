@@ -1,0 +1,10 @@
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\bin\Debug\LidarRenderer.exe.config
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\bin\Debug\LidarRenderer.exe
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\bin\Debug\LidarRenderer.pdb
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.csprojAssemblyReference.cache
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.Form1.resources
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.Properties.Resources.resources
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.csproj.GenerateResource.cache
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.csproj.CoreCompileInputs.cache
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.exe
+C:\Users\loke_\source\repos\LidarRenderer\LidarRenderer\obj\Debug\LidarRenderer.pdb

@@ -1,0 +1,13 @@
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\bin\Debug\LidarDriver.exe.config
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\bin\Debug\LidarDriver.exe
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\bin\Debug\LidarDriver.pdb
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.csprojAssemblyReference.cache
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.Form1.resources
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.Properties.Resources.resources
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.csproj.GenerateResource.cache
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.csproj.CoreCompileInputs.cache
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.exe
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.pdb
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\bin\Debug\WindowsInput.dll
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\bin\Debug\WindowsInput.xml
+C:\Users\loke_\source\repos\LidarDriver\LidarDriver\obj\Debug\LidarDriver.csproj.CopyComplete
