@@ -7,14 +7,12 @@ namespace LidarProject
     {
         public static ArduinoComm arduino;
 
-        public EventHandler<StringRecievedEventArgs> StringRecieved;
         SerialPort port;
         public ArduinoComm(string portName, int baudrate)
         {
             arduino = this;
 
             port = new SerialPort(portName, baudrate, Parity.None, 8, StopBits.One);
-            port.DataReceived += ReadString;
             port.Open();
         }
 
@@ -22,33 +20,23 @@ namespace LidarProject
         /// This sends a string to the arduino. Arduino will look for a #-symbol followed by the character for dataType
         /// </summary>
         /// <param name="dataType"> Tells the arduino how to interpret the incoming data </param>
-        public void SendString(char dataType, string message)
+        public void SendString(char dataType, string message = null)
         {
             Console.WriteLine("#" + dataType + message);
 
             port.Write("#" + dataType);
-            port.Write(message);
+            if(message != null)
+                port.Write(message);
         }
 
-        public void ReadString(object sender, SerialDataReceivedEventArgs e)
+        public string ReadString()
         {
-            StringRecievedEventArgs args = new StringRecievedEventArgs(port.ReadLine());
-            OnStringRecieved(args);
+            return port.ReadLine();
         }
 
-        protected virtual void OnStringRecieved(StringRecievedEventArgs e)
+        public void ClearBuffer()
         {
-            StringRecieved?.Invoke(this, e);
-        }
-    }
-
-    public class StringRecievedEventArgs
-    {
-        public string line;
-
-        public StringRecievedEventArgs(string message)
-        {
-            line = message;
+            port.DiscardInBuffer();
         }
     }
 }

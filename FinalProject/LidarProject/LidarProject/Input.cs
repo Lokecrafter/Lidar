@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using WindowsInput.Native;
+﻿using WindowsInput.Native;
 using WindowsInput;
 
 namespace LidarProject
