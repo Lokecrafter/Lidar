@@ -41,9 +41,7 @@ namespace LidarProject
         {
             while (true)
             {
-                ArduinoComm.arduino.ClearBuffer();
-                Program.SimulateJoystick(ArduinoComm.arduino, Input.GetAxis('x'), Input.GetAxis('y'));
-                Thread.Sleep(5);
+                //Program.SimulateJoystick(ArduinoComm.arduino, Input.GetAxis('x'), Input.GetAxis('y'));
                 DrawLidarPoint(Program.GetLidarData(ArduinoComm.arduino));
             }
         }

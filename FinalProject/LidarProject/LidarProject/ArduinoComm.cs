@@ -33,10 +33,5 @@ namespace LidarProject
         {
             return port.ReadLine();
         }
-
-        public void ClearBuffer()
-        {
-            port.DiscardInBuffer();
-        }
     }
 }
