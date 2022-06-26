@@ -3,6 +3,7 @@ import cv2
 import time 
 import numpy as np
 from math import pi, sin, cos
+from pylab import *
 
     
     
@@ -40,11 +41,19 @@ def getPoints(lidarData):
 
 def computeCartesian(polar):
     cartesian = []
+    #Checking derivative
+    angles = []
+    distances = []
     for p in polar:
         angle = p[0] % (2 * pi)
         dist = p[1]
         
+        angles.append(angle)
+        distances.append(dist)
+        
         cartesian.append(   (cos(angle) * dist, sin(angle) * dist)    )
+    plot(angles, distances)
+    show()
     return cartesian
         
 
@@ -81,11 +90,13 @@ def main():
             polarCoords = getPoints(data)
             cartesianCoords = computeCartesian(polarCoords)
             for c in cartesianCoords:
+                newC = (round(c[0]), round(c[1]))
+                
                 #Draw circle on image
-                cv2.circle(img, (int(c[0] * scaleFact + width1*0.5), int(c[1] * -scaleFact + height1*0.5)), 2, (255,255,255), cv2.FILLED)
+                cv2.circle(img, (int(newC[0] * scaleFact + width1*0.5), int(newC[1] * -scaleFact + height1*0.5)), 2, (255,255,255), cv2.FILLED)
                 
                 #Log coordinates
-                print(str(c), file=log, end="")
+                print(str(newC), file=log, end="")
                 print("   ", file=log, end="")
             print("", file=log)
         
